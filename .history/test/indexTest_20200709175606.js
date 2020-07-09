@@ -7,10 +7,9 @@ const js = fs.readFileSync(path.resolve(__dirname, "..", "index.js"), "utf-8");
 
 //describe is a function provided by test library Mocha
 describe("index.js", function () {
-  //the first argument of describe is the programmer's own words. should be descriptive to help your testing purpose
+  //the first argument of describe is the programmer's own words. should be descriptive
   describe("companyName", function () {
     it("is set as Scuber", function () {
-      //again, first argument for the programmer's understanding
       expect(companyName).to.equal("Scuber");
     });
 
